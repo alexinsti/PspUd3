@@ -40,7 +40,7 @@ public class SocketTCPClient {
     }
 
     public static void main(String[] args) {
-        SocketTCPClient cliente = new SocketTCPClient("192.168.208.34", 49171);
+        SocketTCPClient cliente = new SocketTCPClient("localhost", 49171);
         try {
             cliente.start();
             cliente.os.write(10);
